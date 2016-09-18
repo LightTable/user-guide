@@ -4,4 +4,4 @@
 * [How Do I...](how.md)
 * [What is...](what.md)
 * [Other stuff](other.md)
-* [Full tutorial](tutorials/full.md)
+* [Full tutorial](/tutorials/full.md)
