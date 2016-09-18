@@ -76,8 +76,6 @@ Below are links users both new and old will find useful.
 
 ## New Users
 
-If it's your first time using Light Table, see the [[User Intro]].
-
 If you are coming from Vim, see [[For Vim Users]].
 
 If you are coming from Emacs, see [[For Emacs Users]].
