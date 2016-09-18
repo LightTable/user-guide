@@ -68,8 +68,6 @@ You may want to
     * Try emacs mode by adding (:lt.plugins.emacs/activate-emacs)
     * Contribute to this wiki page. Questions and updates welcome.
 
-
-
 ---
 
 Below are links users both new and old will find useful. 
