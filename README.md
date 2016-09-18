@@ -1,3 +1,4 @@
-# My Awesome Book
+  # User Guide
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+Here you will learn about the next generation code editor, Light Table. We will start with the basics and work our way to more advanced features and usages.
+
