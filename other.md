@@ -1,3 +1,5 @@
+#Other stuff
+
 ###What languages does Light Table support?
 
 Light Table's general editor capabilities will work with most languages out there, but it has deeper language integrations (things like inline eval) for Clojure, ClojureScript, Javascript, Python, HTML, and CSS. More languages can be added via plugins in the future.
