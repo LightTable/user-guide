@@ -1,3 +1,3 @@
 # Summary
 
-* [First Chapter](chapter1.md)
+* [Getting Started with Light Table](getting-started.md)
