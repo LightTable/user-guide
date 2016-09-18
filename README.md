@@ -76,9 +76,9 @@ Below are links users both new and old will find useful.
 
 ## New Users
 
-If you are coming from Vim, see [[For Vim Users]].
+If you are coming from Vim, see [For Vim Users](for-emac-users.md).
 
-If you are coming from Emacs, see [[For Emacs Users]].
+If you are coming from Emacs, see [For Emacs Users](for-vim-users.md).
 
 ## Tutorials & Screencasts
 
