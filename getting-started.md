@@ -1,5 +1,9 @@
 # Getting Started
 
+###Full tutorials
+
+* [Getting started with Light Table](/tutorials/full/)
+
 ###Opening and creating new files
 
 To create a new file, use the `New file` menu item in the `File` menu or press cmd/ctrl-n
@@ -97,7 +101,3 @@ The `command` pane is your one stop shop to figure out if Light Table can do som
 The command pane will also show keybindings for the given command underneath the command's name.
 
 ![command tab](/images/start/cmdopts.png)
-
-0
-Looking
-
