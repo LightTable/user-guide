@@ -1,9 +1,5 @@
 # Getting Started
 
-###Full tutorials
-
-* [Getting started with Light Table](/tutorials/full/)
-
 ###Opening and creating new files
 
 To create a new file, use the `New file` menu item in the `File` menu or press cmd/ctrl-n
