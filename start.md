@@ -2,7 +2,7 @@
 
 ###Full tutorials
 
-* [Getting started with Light Table](/tutorials/full/)
+* [Getting started with Light Table](/tutorials/full.md)
 
 ###Opening and creating new files
 
