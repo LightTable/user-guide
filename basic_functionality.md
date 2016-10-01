@@ -1,6 +1,6 @@
 # Basic Functionality
 
-Creating and opening files, navigation pane, connections pane, command pane, searching documentation
+All you could want to know about: files, navigation, connections, commands, and searching documentation
 
 ### Opening and creating new files
 
@@ -47,7 +47,7 @@ The `connect` tab also allows you to explicitly add a connection to a client, by
 
 ### Command pane
 
-The `command` pane is your one stop shop to figure out if Light Table can do something. It's a filter list like navigate that presents a list of all the visible commands in Light Table. Want to open a file or change some setting? Type "open file" or "setting" to filter down to what you want to do and then press enter to do it. Opening the `command` pane is bound to Ctrl+Space by default, but you can use the `Commands` item in the `View` menu as well.
+The `command` pane is your one stop shop to figure out if Light Table can do something. It is a filter list like navigate that presents a list of all the visible commands in Light Table. Want to open a file or change some setting? Type "open file" or "setting" to filter down to what you want to do and then press enter to do it. Opening the `command` pane is bound to Ctrl+Space by default, but you can use the `Commands` item in the `View` menu as well.
 
 ![command tab](/images/start/cmd.png)
 
@@ -59,5 +59,8 @@ The command pane will also show keybindings for the given command underneath the
 
 > Note: This functionality is dependent on the language plugin associated with the file.
 
-### Documentation Pane
+With your cursor on a function, it is possible to see the documentation at a glance. Simply press Ctrl-D and any documentation found will be displayed in the editor. To hide the documentation, either press Ctrl-D again, or right click the box and select clear.
 
+### Language Documentation Pane
+
+The documentation 
