@@ -63,4 +63,6 @@ With your cursor on a function, it is possible to see the documentation at a gla
 
 ### Language Documentation Pane
 
-The documentation 
+> Note: This functionality is dependent on the language plugin associated with the file.
+
+The language documentation pane makes it possible to search a language's documentation without ever leaving Light Table. To open the pane, press Ctrl-Shift-D or search for '' in the Command pane.
