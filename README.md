@@ -79,7 +79,7 @@ If you are coming from Vim, see [For Vim Users](/for-emac-users.md).
 
 If you are coming from Emacs, see [For Emacs Users](/for-vim-users.md).
 
-## Tutorials & Screencasts
+## Tutorials and Screencasts
 
   * [Getting the feel for the Light Table's instarepl](http://blog.maio.cz/2013/08/getting-feel-for-light-tables-instarepl.html) by Marian Schubert
   * [Set of screencasts](http://www.youtube.com/user/Misophistful/videos) on Clojure programming in LightTable by James Trunk
