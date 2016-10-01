@@ -1,58 +1,13 @@
 # Basic Functionality
 
-Creating and opening files, searching documentation
+Creating and opening files, navigation pane, connections pane, command pane, searching documentation
 
-###Opening and creating new files
+### Opening and creating new files
 
 To create a new file, use the `New file` menu item in the `File` menu or press cmd/Ctrl-N
 To open a file, use the `Open file` menu item in the `File` menu or press cmd/Ctrl-Shift-O
 
-###With Clojure
-
-If you have some Clojure code in a file already, you can get going with inline eval by:
-
-1. Create a new file and save it with a `.clj` extension or open a `.clj` file
-2. Press Cmd/Ctrl+Enter to evaluate a form
-3. Wait for the client to connect (this can take a bit the first time)
-4. Once connected you'll see your result.
-
-###With Javascript/HTML/CSS
-
-In order to evaluate Javascript, HTML, or CSS, we need a browser to see the result in. To open a browser tab in Light Table:
-
-1. In the view menu click the `commands` item
-2. Type "brows" and press enter when the `Browser: add browser tab` command is highlighted
-3. Use the url bar at the bottom to open your page (note: this can be a `file://` url to open an html file locally, or it can be something on the internet/localhost).
-
-Now that we have a place to send our code, let's open a .js file and eval something:
-
-4. Create a new file and save it with a .js extension or open a .js file
-5. Press Cmd/Ctrl+Enter while the cursor is over a top-level block of code. To eval an inner block, select and then eval it.
-5. Select the webpage name from the available clients popup
-6. You'll now see results inline!
-7. Evaling from a .css file will inject the css into the page.
-8. Evaling from an .html file will refresh the browser tab.
-
-###With Python
-
-Getting started with Python is as simple as:
-
-1. Create a new file with a .py extension or open a .py file
-2. While over some code press Cmd/Ctrl+Enter
-3. Allow Light Table a few seconds while it connects to a python process
-4. You'll now see results inline!
-
-If you want to use Light Table to do matplotlib/pylab graphs and such, you'll want to install the IPython kernel:
-
-1. Follow these [instructions](http://ipython.org/ipython-doc/stable/install/install.html) to install IPython (note: it must IPython 1.0 or greater and you *must* install pyzmq as well in order for it to work with Light Table.)
-2. Make sure IPython is on your path
-3. Restart Light Table
-4. Open a .py file by pressing Cmd/Ctrl+Shift+O
-5. Over an expression that will return a graph, press Cmd/Ctrl+Enter
-6. You'll see the graph embedded below your expression.
-
-
-###With the workspace tree (or how to open files)
+### Workspace tree (or how to open files)
 
 Opening each file individually through the native open dialogs isn't very efficient. The `workspace` tree allows you to instead add files and folders into a file explorer that you can then use to open/rename/delete/etc the files you're interested in. To open the workspace tree, click the `Workspace` item in the view menu. You can then add files or folders to the workspace using the buttons at the top.
 
@@ -66,7 +21,7 @@ When you open a new window of Light Table, you'll be given a new blank workspace
 
 ![workspace tab recent](/images/start/wsrecent.png)
 
-###With the Navigate pane
+### Navigation pane
 
 Once you have files and folders in your workspace, the `navigate` pane provides the quickest way to open a file by name. Opening it is bound to Cmd/Ctrl+O by default.
 
@@ -76,7 +31,7 @@ The navigate tab is a "filter list" where typing in the top input will filter th
 
 ![navigate tab filtered](/images/start/navi2.png)
 
-###With the Connections pane
+### Connections pane
 
 The `connect` pane shows you a list of currently connected "clients" that can be used for doing language operations like eval. To open it, use the `Connections` item in the `View` menu or the `Connect: Show connect bar` command.
 
@@ -90,7 +45,7 @@ The `connect` tab also allows you to explicitly add a connection to a client, by
 
 ![connect tab](/images/start/conadd.png)
 
-###With the Command pane
+### Command pane
 
 The `command` pane is your one stop shop to figure out if Light Table can do something. It's a filter list like navigate that presents a list of all the visible commands in Light Table. Want to open a file or change some setting? Type "open file" or "setting" to filter down to what you want to do and then press enter to do it. Opening the `command` pane is bound to Ctrl+Space by default, but you can use the `Commands` item in the `View` menu as well.
 
@@ -99,3 +54,10 @@ The `command` pane is your one stop shop to figure out if Light Table can do som
 The command pane will also show keybindings for the given command underneath the command's name.
 
 ![command tab](/images/start/cmdopts.png)
+
+### Inline Documentation
+
+> Note: This functionality is dependent on the language plugin associated with the file.
+
+### Documentation Pane
+
