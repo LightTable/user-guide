@@ -6,28 +6,28 @@ Here you will learn about the next generation code editor, Light Table. We will 
 
 Let's get started!
 
-## Acquire Light Table
+## Get Light Table
 
-Light Table can be obtained by clicking the Download button [here](http://www.lighttable.com/). This will download an archive of Light Table that you will need to extract.
+First we need to download Light Table and it can be obtained by the Download button [here](http://www.lighttable.com/). The download will be in the form of an archive (e.g., `.tar`, `.zip`) that you will need to extract.
 
 ## First Clojure Eval
 
 Evaluating Clojure code within a file is trivial. After starting Light Table, open a new file by pressing `Ctrl-N`. 
 
-Since this new file is not a Clojure or Clojurescript file we will need to set the syntax to Clojure. To do so, press `Ctrl-Space` to open the command bar, type/select 'Set editor syntax', then select Clojure.
+Since the new file is not a Clojure or Clojurescript file we will need to set the syntax to Clojure. To do so, press `Ctrl-Space` to open the command bar, type/select 'Set editor syntax', then select Clojure.
 
-Next, type (+ 1 2) followed by pressing `Ctrl-Enter` (`Cmd-Return` on Mac). This will tell Light Table to install dependencies and eval the expression, which should return 3 to the immediate right of the line.
+Next, type (+ 1 2) followed by pressing `Ctrl-Enter` (`Cmd-Return` on Mac). This installs dependencies, if any, and evals the expression, which should return 3 to the immediate right of the line.
 
 ## Start an Instarepl
 
-The Instarepl no longer is packaged with Light Table by default. First we will need to install the plugin. Navigate to the command bar (`Ctrl-Space`) and type/select 'Plugins: Show plugin manager' This will open up the plugin manager. Type 'clojureinstarepl' and press enter to get a list of results. Hover the mouse over the 'ClojureInstarepl' result and an option to install the plugin should appear on the right hand side. Click to install the plugin. It may be necessary to restart Light Table to ensure the new plugin is fully loaded.
+> Note: Instarepl currently only works for Clojure files (.clj), not Clojurescript.
 
-With the Instarepl plugin now installed, press `Ctrl-Space` to show the command bar, type "repl" in the command search box, and then select one item to run it:
+The Instarepl is no longer packaged with Light Table by default. First we will need to install the plugin. Navigate to the command bar (`Ctrl-Space`) and type/select 'Plugins: Show plugin manager'. This will open up the plugin manager. Type 'clojureinstarepl' and press enter to get a list of results. Hover the mouse over the 'ClojureInstarepl' result and an option to install the plugin should appear on the right hand side. Click to install the plugin. It may be necessary to restart Light Table to ensure the new plugin is fully loaded.
+
+With the Instarepl plugin installed, press `Ctrl-Space` to show the command bar, type "repl" in the command search box, and then select one item to run it:
 
   * Open a clojure instarepl
   * Make current editor an instarepl
-
-Instarepl currently only works for Clojure files (.clj), not Clojurescript.
 
 ## User settings
 You can access user settings by opening the Commands menu (`Ctrl-Space`) and typing `Settings: `. The following items should appear in the menu:
