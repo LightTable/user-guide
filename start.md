@@ -1,6 +1,6 @@
 # Inline Evaluation
 
-###With Clojure
+### Clojure
 
 If you have some Clojure code in a file already, you can get going with inline eval by:
 
@@ -9,7 +9,7 @@ If you have some Clojure code in a file already, you can get going with inline e
 3. Wait for the client to connect (this can take a bit the first time)
 4. Once connected you'll see your result.
 
-###With Javascript/HTML/CSS
+### Javascript/HTML/CSS
 
 In order to evaluate Javascript, HTML, or CSS, we need a browser to see the result in. To open a browser tab in Light Table:
 
@@ -26,7 +26,7 @@ Now that we have a place to send our code, let's open a .js file and eval someth
 7. Evaling from a .css file will inject the css into the page.
 8. Evaling from an .html file will refresh the browser tab.
 
-###With Python
+### Python
 
 Getting started with Python is as simple as:
 
