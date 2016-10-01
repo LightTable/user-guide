@@ -38,7 +38,7 @@ You can access user settings by opening the Commands menu (`Ctrl-Space`) and typ
 * Settings: Default behaviors
 * Settings: Workspace behaviors
 
-Additionally, you can access the same settings files directly by navigating to them in the following locations:
+Alternatively, the same settings files are accessible in the following locations:
 
   * Mac: `~/Library/Application Support/LightTable/User/`
   * Linux: `~/.config/LightTable/User/`
