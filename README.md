@@ -63,11 +63,10 @@ You may want to
     ~~~
 
   * To change various settings type Ctrl-Space `Settings: User behaviors`
-
-    * Change a theme by editing the string theme name in (:lt.objs.style/set-theme "default") for example (:lt.objs.style/set-theme "ibdknox")
-    * Try vim mode by adding (:lt.plugins.vim/activate-vim) (Note: The Vim plugin must be installed. See [this article](https://groups.google.com/forum/?fromgroups#!topic/light-table-discussion/TuJmH5Bpo2c) for details.)
-    * Try emacs mode by adding (:lt.plugins.emacs/activate-emacs)
-    * Questions and updates welcome.
+  * Change a theme by editing the string theme name in (:lt.objs.style/set-theme "default") for example (:lt.objs.style/set-theme "ibdknox")
+  * Try vim mode by adding (:lt.plugins.vim/activate-vim) (Note: The Vim plugin must be installed. See [this article](https://groups.google.com/forum/?fromgroups#!topic/light-table-discussion/TuJmH5Bpo2c) for details.)
+  * Try emacs mode by adding (:lt.plugins.emacs/activate-emacs)
+  * Questions and updates welcome.
 
 ---
 
