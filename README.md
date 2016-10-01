@@ -6,11 +6,11 @@ Here you will learn about the next generation code editor, Light Table. We will 
 
 Let's get started!
 
-## Get Light Table
+### Get Light Table
 
 First we need to download Light Table and it can be obtained by the Download button [here](http://www.lighttable.com/). The download will be in the form of an archive (e.g., `.tar`, `.zip`) that you will need to extract.
 
-## First Clojure Eval
+### First Clojure Eval
 
 Evaluating Clojure code within a file is trivial. After starting Light Table, open a new file by pressing `Ctrl-N`. 
 
@@ -18,7 +18,7 @@ Since the new file is not a Clojure or Clojurescript file we will need to set th
 
 Next, type (+ 1 2) followed by pressing `Ctrl-Enter` (`Cmd-Return` on Mac). This installs dependencies, if any, and evals the expression, which should return 3 to the immediate right of the line.
 
-## Start an Instarepl
+### Start an Instarepl
 
 > Note: Instarepl currently only works for Clojure files (.clj), not Clojurescript.
 
@@ -29,7 +29,7 @@ With the Instarepl plugin installed, press `Ctrl-Space` to show the command bar,
   * Open a clojure instarepl
   * Make current editor an instarepl
 
-## User settings
+### User settings
 You can access user settings by opening the Commands menu (`Ctrl-Space`) and typing `Settings: `. The following items should appear in the menu:
 
 * Settings: User keymaps
@@ -44,7 +44,7 @@ Alternatively, the same settings files are accessible in the following locations
   * Linux: `~/.config/LightTable/User/`
   * Windows: `%APPDATALOCAL%/LightTable/User/`
 
-## What next
+### What next
 
 You may want to
 
@@ -72,13 +72,13 @@ You may want to
 
 Below are links users both new and old will find useful. 
 
-## New Users
+### New Users
 
 If you are coming from Vim, see [For Vim Users](/for-emac-users.md).
 
 If you are coming from Emacs, see [For Emacs Users](/for-vim-users.md).
 
-## Tutorials and Screencasts
+### Tutorials and Screencasts
 
   * [Getting the feel for the Light Table's instarepl](http://blog.maio.cz/2013/08/getting-feel-for-light-tables-instarepl.html) by Marian Schubert
   * [Set of screencasts](http://www.youtube.com/user/Misophistful/videos) on Clojure programming in LightTable by James Trunk
