@@ -1,6 +1,6 @@
 # Plugins
 
-### Where to Find Plugins
+### Plugin Manager
 
 ### Search Plugins
 
