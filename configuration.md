@@ -35,3 +35,24 @@ You can use the environment variable `LTHOME` to tell the command line scripts w
 ### Find out what version of Light Table I'm using?
 
 Use the `App: Light Table version` command from the command tab.
+
+### Plugins directory
+
+The plugins directory varies depending on the platform:
+
+* Mac: `~/Library/Application\ Support/LightTable/plugins`
+* Linux: `~/.config/LightTable/plugins`
+* Windows: `%APPDATALOCAL%/LightTable/plugins`
+
+Alternatively, you can see your location from running the command `App: Light Table version`.
+
+### User plugin
+
+Your complete configuration, including plugins you've installed, is stored in a User plugin. Since the User plugin is just a directory, you can share it by putting it under revision control e.g. git and uploading it to a service like Github. To explore it, add it to your workspace with the command `Settings: Add User plugin to workspace`. Any custom keybindings and behaviors are added to `user.keymap` and `user.behaviors`. To write commands, behaviors and more, see `src/lt/plugins/user.cljs`. To open your `user.cljs` at anytime use the command `Settings: User script`. Inside the default `user.cljs` is an example command and behavior. If you're upgrading Light Table, you will need to add two behaviors to `user.behaviors` in order for the examples to work:
+
+```clojure
+[:app :lt.objs.plugins/load-js "user_compiled.js"]
+[:user.hello :lt.plugins.user/on-close-destroy]
+```
+
+Run the command `User: Say Hello` to see your own command!
