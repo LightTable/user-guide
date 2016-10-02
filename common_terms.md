@@ -25,3 +25,5 @@ In the Light Table world, a workspace is the group of files and folders that you
 Light Table's functionality is defined by functions that respond to a set of triggers. This combination of a function and the triggers that it reacts to is called a behavior. Behaviors serve as the way to define what Light Table does in any number of situations and operate as a very powerful settings system. Behaviors are not applied directly to objects, but rather to "tags". These tags allow you to specify behavior for kinds of things at different levels of specificity. For example, you can apply behavior to all editors by adding a behavior to the `:editor` tag or to only clojure editors by adding it to the `:editor.clojure` tag. To modify behaviors, execute the `Settings: User behaviors` command.
 
 ### Command
+
+### Plugin
