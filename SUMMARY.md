@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [About Light Table](about_light_table.md)
 * [Basic Functionality](basic_functionality.md)
 * [Advanced Functionality](advanced_functionality.md)
 * [Configuration](configuration.md)
@@ -11,5 +12,4 @@
 * [What is...](what.md)
 * [Other stuff](other.md)
 * [Full tutorial](tutorials/full.md)
-* [About Light Table](about_light_table.md)
 
