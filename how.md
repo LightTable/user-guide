@@ -18,10 +18,6 @@ By default, Cmd/Ctrl+Shift+N is bound to the command `Window: Open new window`, 
 
 You can open a browser tab by either using the `Browser: add browser tab` command or by choosing the browser client type form the "Add Connection" menu in the `connect` tab. Once open, it is now available as an evaluation client and Cmd/Ctrl+R is bound to refreshing it.
 
-### Bring up auto-completion?
-
-Auto-complete is bound to the Tab key if there's some non-space character preceding the cursor, otherwise a tab is inserted.
-
 ### Eval an arbitraty unit of code?
 
 If you have something selected Light Table will send the selection text for eval if you press Cmd/Ctrl+Enter.
