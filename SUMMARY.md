@@ -4,7 +4,7 @@
 * [Basic Functionality](basic_functionality.md)
 * [Advanced Functionality](advanced_functionality.md)
 * [Inline Evaluation](start.md)
-* [Example Clojure Workflow](example_clojure_workflow.md)
+* [Example Workflow - Clojure](example_clojure_workflow.md)
 * [How Do I...](how.md)
 * [What is...](what.md)
 * [Other stuff](other.md)
