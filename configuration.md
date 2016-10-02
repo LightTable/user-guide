@@ -23,3 +23,15 @@ Keybindings are defined in .keymap files in Light Table. To open the user keymap
 ### Configure keybindings
 
 To add a keybinding to your `user.keymap` file, add a vector in the format `[:TAG "KEYBINDING" :COMMAND]` e.g. `[:editor "alt-w" :editor.watch.watch-selection]`. If a command takes arguments wrap the command and its arguments in a parentheses e.g. `[:editor "alt-(" (:paredit.select.parent "(")]`. If you want to bind multiple commands to the same keybinding, use a simple vector for the whole binding-command e.g. `[:editor  "alt-(" (:paredit.select.parent "(") :smart-indent-selection]`. Keybindings that are set by default can be subtracted/removed by prefixing the key with '-'  e.g. `[:app "-ctrl-shift-d" :docs.search.show]`.
+
+### Exclude files from the workspace?
+
+Open your user behaviors and in the `:app` tag start typing "ignore". Select the `Files: Set ignore pattern` behavior.
+
+### Change the location of the lighttable directory?
+
+You can use the environment variable `LTHOME` to tell the command line scripts where to find LT.
+
+### Find out what version of Light Table I'm using?
+
+Use the `App: Light Table version` command from the command tab.
