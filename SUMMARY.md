@@ -11,5 +11,5 @@
 * [What is...](what.md)
 * [Other stuff](other.md)
 * [Full tutorial](tutorials/full.md)
-* About Light Table
+* [About Light Table](about_light_table.md)
 
