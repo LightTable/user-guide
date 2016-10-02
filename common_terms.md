@@ -26,4 +26,8 @@ Light Table's functionality is defined by functions that respond to a set of tri
 
 ### Command
 
-### Plugin
+### Plugins
+
+### Theme
+
+### Keybindings
