@@ -1,2 +1,7 @@
-# Configuraton
+# Configuration
 
+### Settings
+
+### Behaviors
+
+### Keymaps
