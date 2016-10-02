@@ -7,6 +7,7 @@
 * [Advanced Functionality](advanced_functionality.md)
 * [Configuration](configuration.md)
 * [Plugins](plugins.md)
+   * Popular Plugins
 * [Inline Evaluation](start.md)
 * [Example Workflow - Clojure](example_clojure_workflow.md)
 * [How Do I...](how.md)
