@@ -8,4 +8,5 @@
 * [What is...](what.md)
 * [Other stuff](other.md)
 * [Full tutorial](tutorials/full.md)
+* Example Clojure Workflow
 
