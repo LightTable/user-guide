@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [About Light Table](about_light_table.md)
+* [Common Terms](common_terms.md)
 * [Basic Functionality](basic_functionality.md)
 * [Advanced Functionality](advanced_functionality.md)
 * [Configuration](configuration.md)
@@ -11,5 +12,4 @@
 * [How Do I...](how.md)
 * [What is...](what.md)
 * [Full tutorial](tutorials/full.md)
-* [Common Terms](common_terms.md)
 
