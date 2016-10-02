@@ -17,7 +17,7 @@ In order to evaluate Javascript, HTML, or CSS, we need a browser to see the resu
 2. Type "brows" and press enter when the `Browser: add browser tab` command is highlighted
 3. Use the URL bar at the bottom to open your page. This can be a `file://` URL to open an HTML file locally, or it can be something on the network.
 
-Now that we have a place to send our code, let's open a .js file and eval something:
+Now that we have a place to send our code, let's open a `.js` file and eval something:
 
 4. Create a new file and save it with a .js extension or open a .js file
 5. Press Cmd/Ctrl+Enter while the cursor is over a top-level block of code. To eval an inner block, select and then eval it.
