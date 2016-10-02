@@ -10,6 +10,5 @@
 * [Inline Evaluation](start.md)
 * [Example Workflow - Clojure](example_clojure_workflow.md)
 * [How Do I...](how.md)
-* [What is...](what.md)
 * [Full tutorial](tutorials/full.md)
 
