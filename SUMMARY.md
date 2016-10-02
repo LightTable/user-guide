@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Basic Functionality](basic_functionality.md)
-* Advanced Functionality
+* [Advanced Functionality](advanced_functionality.md)
 * [Inline Evaluation](start.md)
 * [How Do I...](how.md)
 * [What is...](what.md)
