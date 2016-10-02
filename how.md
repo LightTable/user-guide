@@ -1,32 +1,8 @@
 # How Do I...
 
-### Change settings (e.g., fonts, line numbers)?
-
-Settings are represented as behaviors in Light Table. To modify your user behaviors, execute the `Settings: User behaviors` command and modify the file that is opened. 
-
-For example, to turn on the line number gutter, find the `:editor` tag and in the square brackets type "number". Then select `Editor: Show line numbers` behavior. This workflow lets you search for the behavior you want via the auto-complete and then the helper will show you what parameters are needed (if any) for that behavior.
-
-All settings in Light Table work this way and behaviors give you the ability to fundamentally change the functionality of Light Table.
-
-### Configure behaviors
-
-To add a behavior to your `user.behaviors` file, add a vector in the format `[:TAG :COMMAND :ARG1 :ARG2 ...]` (e.g., `[:editor :lt.objs.editor/no-wrap]`). If a command takes arguments append them after the command (e.g., `[:app :lt.objs.app/set-default-zoom-level 0.8]`). Behaviors that are set by default can be disabled/subtracted/removed by prefixing the command with `-`  (e.g., `[:editor :-lt.objs.editor/no-wrap]`).
-
-### Change theme
-
-To set the editor theme execute the `Settings: User behaviors` command, type `[:editor :lt.objs.style/set-theme "" ]` and in between quotation marks type a theme name (auto-complete will help you here). To see what different themes look like, try [the CodeMirror theme demo](http://codemirror.com/demo/theme.html). Note that some themes listed there may not be available because LightTable may not be on the same CodeMirror version as the demo. To try third party themes, like [these ones](https://github.com/FarhadG/code-mirror-themes), download them and add an entry for it in user.behaviors file:  `[:app :lt.objs.style/provide-theme "theme-name" "/full/path/to/theme/css"]`. Once a theme is provided you can set it with the aforementioned `set-theme`.
-
 ### Evaluate code inline?
 
 Within an editor, eval a single "block" (or form if you're used to LISP) is bound to Cmd/Ctrl+Enter by default and evaling an entire file is bound to Cmd/Ctrl+Shift+Enter. Not all file types know how to eval, to find out what kinds of clients are available for evaluation, open the `connect` tab and press the "Add Connection" button. This will give you a list of all the clients Light Table knows how to start.
-
-### Change keybindings?
-
-Keybindings are defined in .keymap files in Light Table. To open the user keymap, execute the `Settings: User keymap` command. To see the default keybindings you can execute the `Settings: Default keymap` command. Keys are bound based on context (tag), which allows you to create contextual command schemes.
-
-### Configure keybindings
-
-To add a keybinding to your `user.keymap` file, add a vector in the format `[:TAG "KEYBINDING" :COMMAND]` e.g. `[:editor "alt-w" :editor.watch.watch-selection]`. If a command takes arguments wrap the command and its arguments in a parentheses e.g. `[:editor "alt-(" (:paredit.select.parent "(")]`. If you want to bind multiple commands to the same keybinding, use a simple vector for the whole binding-command e.g. `[:editor  "alt-(" (:paredit.select.parent "(") :smart-indent-selection]`. Keybindings that are set by default can be subtracted/removed by prefixing the key with '-'  e.g. `[:app "-ctrl-shift-d" :docs.search.show]`.
 
 ### Split windows?
 
@@ -81,10 +57,6 @@ The easiest way is to simply open a Python file and press Cmd/Ctrl+Enter. This w
 
 By default, if Light Table can find a recent IPython installed on your machine, it will use it to provide a much more robust python evaluation environment. If you don't have it installed, follow these [instructions](http://ipython.org/ipython-doc/stable/install/install.html) to do so (make sure you install pyzmq as well). With it you can use matplotlib and pylab inline. To see if Light Table is using IPython for Python eval, open the `connect` tab and look to see if your Python client has the type of `ipython`. Note that in order for Light Table to use IPython, pyzmq also needs to be installed.
 
-### See the output from STDOUT and STDERR?
-
-When you print from a client, it will appear in the Console, which can be opened by clicking the blue number in the bottom right corner of the editor, from the `View` menu, or by using the `Console: Toggle console` command.
-
 ### Use a different client once I've evaled something?
 
 From the `connect` tab, find the client and make sure the editor you evaled in is active. The connected client(s) will appear highlighted. Click the "unset" button to force Light Table to re-evaluate what clients are available to eval in the editor.
@@ -108,40 +80,6 @@ behaviors`. If Emacs is already installed, disable it in users.behaviors with `[
 Install the `Emacs` plugin using the Plugin Manager and then run the command `App: Reload
 behaviors`. If Vim is already installed, disable it in users.behaviors with `[:editor
 :-lt.plugins.vim/activate-vim]`.
-
-### Exclude files from the workspace?
-
-Open your user behaviors and in the `:app` tag start typing "ignore". Select the `Files: Set ignore pattern` behavior.
-
-### Change the location of the lighttable directory?
-
-You can use the environment variable `LTHOME` to tell the command line scripts where to find LT.
-
-### Find out what version of Light Table I'm using?
-
-Use the `App: Light Table version` command from the command tab.
-
-### Plugins directory
-
-The plugins directory varies depending on the platform:
-
-* Mac: `~/Library/Application\ Support/LightTable/plugins`
-* Linux: `~/.config/LightTable/plugins`
-* Windows: `%APPDATALOCAL%/LightTable/plugins`
-
-Alternatively, you can see your location from running the command `App: Light Table version`.
-
-### User plugin
-
-Your complete configuration, including plugins you've installed, is stored in a User plugin. Since the User plugin is just a directory, you can share it by putting it under revision control e.g. git and uploading it to a service like Github. To explore it, add it to your workspace with the command `Settings: Add User plugin to workspace`. Any custom keybindings and behaviors are added to `user.keymap` and `user.behaviors`. To write commands, behaviors and more, see `src/lt/plugins/user.cljs`. To open your `user.cljs` at anytime use the command `Settings: User script`. Inside the default `user.cljs` is an example command and behavior. If you're upgrading Light Table, you will need to add two behaviors to `user.behaviors` in order for the examples to work:
-
-```clojure
-[:app :lt.objs.plugins/load-js "user_compiled.js"]
-[:user.hello :lt.plugins.user/on-close-destroy]
-```
-
-Run the command `User: Say Hello` to see your own command!
-
 
 ### Write a plugin
 
