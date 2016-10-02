@@ -1,4 +1,4 @@
-# Example Light Table Workflow - Clojure
+# Example Workflow - Clojure
 
 ### Open Project Folder
 
