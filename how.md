@@ -1,14 +1,16 @@
 # How Do I...
 
-### Change settings (fonts, line numbers...)?
+### Change settings (e.g., fonts, line numbers)?
 
-Settings are represented as behaviors in Light Table. To modify your user behaviors, execute the `Settings: User behaviors` command and modify the file that is opened. For example, to turn on the line number gutter, find the `:editor` tag and in the square brackets type "number". Then select `Editor: Show line numbers` behavior. This workflow lets you search for the behavior you want via the auto-complete and then the helper will show you what parameters are needed (if any) for that behavior.
+Settings are represented as behaviors in Light Table. To modify your user behaviors, execute the `Settings: User behaviors` command and modify the file that is opened. 
+
+For example, to turn on the line number gutter, find the `:editor` tag and in the square brackets type "number". Then select `Editor: Show line numbers` behavior. This workflow lets you search for the behavior you want via the auto-complete and then the helper will show you what parameters are needed (if any) for that behavior.
 
 All settings in Light Table work this way and behaviors give you the ability to fundamentally change the functionality of Light Table.
 
 ### Configure behaviors
 
-To add a behavior to your `user.behaviors` file, add a vector in the format `[:TAG :COMMAND :ARG1 :ARG2 ...]` e.g. `[:editor :lt.objs.editor/no-wrap]`. If a command takes arguments append them after the command e.g. `[:app :lt.objs.app/set-default-zoom-level 0.8]`. Behaviors that are set by default can be subtracted/removed by prefixing the command with '-'  e.g. `[:editor :-lt.objs.editor/no-wrap]`.
+To add a behavior to your `user.behaviors` file, add a vector in the format `[:TAG :COMMAND :ARG1 :ARG2 ...]` (e.g., `[:editor :lt.objs.editor/no-wrap]`). If a command takes arguments append them after the command (e.g., `[:app :lt.objs.app/set-default-zoom-level 0.8]`). Behaviors that are set by default can be disabled/subtracted/removed by prefixing the command with `-`  (e.g., `[:editor :-lt.objs.editor/no-wrap]`).
 
 ### Change theme
 
@@ -29,6 +31,8 @@ To add a keybinding to your `user.keymap` file, add a vector in the format `[:TA
 ### Split windows?
 
 You can create a new tabset by either right clicking in the tab area and selecting `New tabset` or by using the `Tabs: Add a tabset` command in the command bar. To close a tabset you can either use the `Tabs: Remove active tabset` command or resize it such that it has 0 width.
+
+As of v0.8.1, it is not possible to split horizontally, but there is an issue open to address this.
 
 ### Open a new window?
 
