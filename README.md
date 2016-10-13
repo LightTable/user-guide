@@ -22,11 +22,13 @@ Next, type (+ 1 2) followed by pressing `Ctrl-Enter` (`Cmd-Return` on Mac). This
 
 > Note: Instarepl currently only works for Clojure files (.clj), not Clojurescript.
 
+> Note: The Instarepl is currently anticipated to be deprecated and removed entirely starting with v0.9.0.
+
 The Instarepl is no longer packaged with Light Table by default. First we will need to install the plugin. Navigate to the command bar (`Ctrl-Space`) and type/select 'Plugins: Show plugin manager'. This will open up the plugin manager. Type 'clojureinstarepl' and press enter to get a list of results. Hover the mouse over the 'ClojureInstarepl' result and an option to install the plugin should appear on the right hand side. Click to install the plugin. It may be necessary to restart Light Table to ensure the new plugin is fully loaded.
 
 With the Instarepl plugin installed, press `Ctrl-Space` to show the command bar, type "repl" in the command search box, and then select one item to run it:
 
-  * Open a clojure instarepl
+  * Open a Clojure instarepl
   * Make current editor an instarepl
 
 ### User settings
