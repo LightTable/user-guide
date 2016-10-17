@@ -55,14 +55,20 @@ The command pane will also show keybindings for the given command underneath the
 
 ![command tab](/images/start/cmdopts.png)
 
-### Inline Documentation
+### Find
 
-> Note: This functionality is dependent on the language plugin associated with the file.
+In an editor tab, you can find and replace some of the content via the command `Find: In current editor`. The default keybinding is `Ctrl-F`. This will open the find bar. In it you can enter, unsurprisingly, text to search for within the editor.
 
-With your cursor on a function, it is possible to see the documentation at a glance. Simply press Ctrl-D and any documentation found will be displayed in the editor. To hide the documentation, either press Ctrl-D again, or right click the box and select clear.
+Find is smart-cased. This means if you type in all lower case then find assumes you mean to generically search for that run of characters. However, if you intentionally type an uppercase letter then find assumes you are looking for that specific string.
 
-### Language Documentation Pane
+Enable regular expressions by wrapping your query in forward slashes (`/`). For instance, `/(item)/` will find all occurrences of lines containing 'item'. Capture groups can be used in the replace field. With the above example, you could append an 's' after 'item' with `$1s`.
 
-> Note: This functionality is dependent on the language plugin associated with the file.
+### Search
 
-The language documentation pane makes it possible to search a language's documentation without ever leaving Light Table. To open the pane, press Ctrl-Shift-D or search for '' in the Command pane.
+Search allows you to search the entire workspace for text via the command `Searcher: Show`. The default keybinding is `Ctrl-Shift-F`. The command will open a new tab with an area to enter your query and one to display the found results.
+
+Search has similarities with Find. Both are smart-cased, allow regular expressions for queries, and have capture groups available. See the Find section for information on those features.
+
+`<workspace>` is the current Light Table workspace. Here is an [example](https://github.com/cldwalker/ltfiles/blob/d2459f26df08c10f4e74352e54dbf4919db5b7b0/src/lt/plugins/ltfiles/search.cljs#L12-L22) of providing your own aliases to use, in addition to `<workspace>`, via your User plugin. 
+
+> Note: Replacement is a destructive change in Search and there is no undoing! See [this issue](https://github.com/LightTable/LightTable/issues/1547) for status.
