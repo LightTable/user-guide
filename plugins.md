@@ -1,5 +1,7 @@
 # Plugins
 
+Plugins (and their authors) offer some of the most compelling features of Light Table.
+
 ### Plugin Manager
 
 ### Search Plugins
