@@ -31,6 +31,16 @@ The navigate tab is a "filter list" where typing in the top input will filter th
 
 ![navigate tab filtered](/images/start/navi2.png)
 
+### Command pane
+
+The `command` pane is your one stop shop to figure out if Light Table can do something. It is a filter list like navigate that presents a list of all the visible commands in Light Table. Want to open a file or change some setting? Type "open file" or "setting" to filter down to what you want to do and then press enter to do it. Opening the `command` pane is bound to Ctrl+Space by default, but you can use the `Commands` item in the `View` menu as well.
+
+![command tab](/images/start/cmd.png)
+
+The command pane will also show keybindings for the given command underneath the command's name.
+
+![command tab](/images/start/cmdopts.png)
+
 ### Connections pane
 
 The `connect` pane shows you a list of currently connected "clients" that can be used for doing language operations like eval. To open it, use the `Connections` item in the `View` menu or the `Connect: Show connect bar` command.
@@ -44,16 +54,6 @@ This list allows you to disconnect a client, which often kills the process it is
 The `connect` tab also allows you to explicitly add a connection to a client, by presenting a list of all the available client type for you to select one from.
 
 ![connect tab](/images/start/conadd.png)
-
-### Command pane
-
-The `command` pane is your one stop shop to figure out if Light Table can do something. It is a filter list like navigate that presents a list of all the visible commands in Light Table. Want to open a file or change some setting? Type "open file" or "setting" to filter down to what you want to do and then press enter to do it. Opening the `command` pane is bound to Ctrl+Space by default, but you can use the `Commands` item in the `View` menu as well.
-
-![command tab](/images/start/cmd.png)
-
-The command pane will also show keybindings for the given command underneath the command's name.
-
-![command tab](/images/start/cmdopts.png)
 
 ### Find
 
