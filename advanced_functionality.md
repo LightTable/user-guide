@@ -6,7 +6,7 @@ In an editor tab, you can find and replace some of the content via the command `
 
 Find is smart-cased. This means if you type in all lower case then find assumes you mean to generically search for that run of characters. However, if you intentionally type an uppercase letter then find assumes you are looking for that specific string.
 
-Regular expressions are enabled by wrapping your query in forward slashes (`/`). For instance, `/(item)/` will find all occurrences of lines containing 'item'. Capture groups can be used in the replace field. With the above example, you could append an 's' after 'item' with `$1s`.
+Enable regular expressions by wrapping your query in forward slashes (`/`). For instance, `/(item)/` will find all occurrences of lines containing 'item'. Capture groups can be used in the replace field. With the above example, you could append an 's' after 'item' with `$1s`.
 
 ### Search
 
