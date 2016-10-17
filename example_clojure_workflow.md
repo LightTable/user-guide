@@ -8,6 +8,8 @@
 
 ### Look up Documentation
 
+### Jump to Definition
+
 ### Evaluate
 
 ### Watch
