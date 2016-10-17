@@ -2,7 +2,7 @@
 
 ### Find
 
-In an editor tab, you can find and replace some of the content via the command `Find: In current editor`. The default keybinding is `Ctrl-F`. This will open the find bar. In it you can enter, unsurpisingly, text to search for within the editor.
+In an editor tab, you can find and replace some of the content via the command `Find: In current editor`. The default keybinding is `Ctrl-F`. This will open the find bar. In it you can enter, unsurprisingly, text to search for within the editor.
 
 Regular expressions can be used by wrapping your query in forward slashes (`/`). For instance, `/.*item.*/` will find all occurrences of lines containing 'item'.
 
