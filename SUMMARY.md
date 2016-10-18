@@ -1,5 +1,6 @@
 # Summary
 
+* [Introduction](about_light_table.md)
 * [About Light Table](about_light_table.md)
 * [Quick Start](quick_start.md)
 * [Common Terms](common_terms.md)
