@@ -1,7 +1,7 @@
 # Summary
 
-* [Quick Start](README.md)
 * [About Light Table](about_light_table.md)
+* [Quick Start](README.md)
 * [Common Terms](common_terms.md)
 * [Basic Functionality](basic_functionality.md)
 * [Advanced Functionality](advanced_functionality.md)
