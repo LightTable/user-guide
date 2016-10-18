@@ -1,4 +1,4 @@
-  # User Guide
+# Quick Start
 
 > Note: This book is a work in progress and under heavy revision. Some content may be inaccurate, describe features no longer supported, or just plain wrong.
 
@@ -10,7 +10,7 @@ As Light Table is mostly written in Clojure(Script), we will highlight functiona
 
 ### Get Light Table
 
-First we need to download Light Table and it can be obtained by the Download button [here](http://www.lighttable.com/). The download will be in the form of an archive (e.g., `.tar`, `.zip`) that you will need to extract.
+First we need to download Light Table. It can be obtained by the Download button on [Light Table's website](http://www.lighttable.com/). The download will be in the form of an archive (e.g., `.tar`, `.zip`) that you will need to extract.
 
 ### Clojure Eval
 
@@ -52,7 +52,7 @@ Alternatively, the same settings files are accessible in the following locations
 
 ### Plugins
 
-Light Table's best features come from the plugins written by plugin authors. They can customize and enhance your Light Table experience to suit your needs. All published plugins can be found [here](https://github.com/LightTable/plugin-metadata) or by searching Github.
+Light Table's best features come from the plugins written by plugin authors. They can customize and enhance your Light Table experience to suit your needs. All published plugins can be found in Light Table's plugin manager, the [plugin meta repository](https://github.com/LightTable/plugin-metadata), or on Github.
 
 ### What next
 
