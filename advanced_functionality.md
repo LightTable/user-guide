@@ -14,7 +14,7 @@ The language documentation pane makes it possible to search a language's documen
 
 ### Jump to Definition - Clojure(Script)
 
-The default keybinding to jump to a definition at the cursor is `Ctrl-.` and `Ctrl-,` to go back.
+The default keybinding to jump to a definition at the cursor is `Ctrl-.` and `Ctrl-,` to go back to the original cursor position. This is useful when you want to checkout another function's definition, or perhaps modify it.
 
 ### Watches
 
