@@ -8,13 +8,13 @@ To create a new file, use the `New file` menu item in the `File` menu or press `
 
 To open a file, use the `Open file` menu item in the `File` menu or press `cmd/Ctrl-Shift-O`.
 
-### Workspace tree (or how to open files)
+### Workspace tree \(or how to open files\)
 
 Opening each file individually through the native open dialogs isn't very efficient. The `workspace` tree allows you to instead add files and folders into a file explorer that you can then use to open/rename/delete/etc the files you're interested in. To open the workspace tree, click the `Workspace` item in the view menu. You can then add files or folders to the workspace using the buttons at the top.
 
 ![workspace tab](/images/start/wsadd.png)
 
-Once you have items in your workspace, you can use the right-click context menu to do the standard file actions you would expect (e.g., rename, delete, new file). From this context menu, it is also possible to remove files and folders from the workspace if you no longer want them.
+Once you have items in your workspace, you can use the right-click context menu to do the standard file actions you would expect \(e.g., rename, delete, new file\). From this context menu, it is also possible to remove files and folders from the workspace if you no longer want them.
 
 ![workspace tab menu](/images/start/wsmenu.png)
 
@@ -62,7 +62,7 @@ In an editor tab, you can find and replace some of the content via the command `
 
 Find is smart-cased. This means if you type in all lower case then find assumes you mean to generically search for that run of characters. However, if you intentionally type an uppercase letter then find assumes you are looking for that specific string.
 
-Enable regular expressions by wrapping your query in forward slashes (`/`). For instance, `/(item)/` will find all occurrences of lines containing 'item'. Capture groups can be used in the replace field. With the above example, you could append an 's' after 'item' with `$1s`.
+Enable regular expressions by wrapping your query in forward slashes \(`/`\). For instance, `/(item)/` will find all occurrences of lines containing 'item'. Capture groups can be used in the replace field. With the above example, you could append an 's' after 'item' with `$1s`.
 
 ### Search
 
@@ -70,6 +70,11 @@ Search allows you to search the entire workspace for text via the command `Searc
 
 Search has similarities with Find. Both are smart-cased, allow regular expressions for queries, and have capture groups available. See the Find section for information on those features.
 
-`<workspace>` is the current Light Table workspace. Here is an [example](https://github.com/cldwalker/ltfiles/blob/d2459f26df08c10f4e74352e54dbf4919db5b7b0/src/lt/plugins/ltfiles/search.cljs#L12-L22) of providing your own aliases to use, in addition to `<workspace>`, via your User plugin. 
+`<workspace>` is the current Light Table workspace. Here is an [example](https://github.com/cldwalker/ltfiles/blob/d2459f26df08c10f4e74352e54dbf4919db5b7b0/src/lt/plugins/ltfiles/search.cljs#L12-L22) of providing your own aliases to use, in addition to `<workspace>`, via your User plugin.
 
 > Note: Replacement is a destructive change in Search and there is no undoing! See [this issue](https://github.com/LightTable/LightTable/issues/1547) for status.
+
+### Go to line
+
+It is possible to quickly jump though a file to a specified line number by using the command `Editor: Go to line`. The default keybinding is \`Ctrl-L\`. This command will, as the name suggests, let you specify a line number to center the editor tab on. If you specify a line number larger than the file then the last line will be used.
+
