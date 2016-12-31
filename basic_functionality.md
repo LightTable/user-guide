@@ -76,5 +76,5 @@ Search has similarities with Find. Both are smart-cased, allow regular expressio
 
 ### Go to line
 
-It is possible to quickly jump though a file to a specified line number by using the command `Editor: Go to line`. The default keybinding is \`Ctrl-L\`. This command will, as the name suggests, let you specify a line number to center the editor tab on. If you specify a line number larger than the file then the last line will be used.
+It is possible to quickly jump though a file to a specified line number by using the command `Editor: Go to line`. The default keybinding is`Ctrl-L`. This command will, as the name suggests, let you specify a line number to center the editor tab on. If you specify a line number larger than the file then the last line will be used.
 
