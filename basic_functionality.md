@@ -84,14 +84,15 @@ The command `Editor: Fold code at cursor`, default keybinding `Ctrl-=`, can be u
 
 ### Zoom
 
-If the default size of Light Table is to large or small, it is possible to adjust via the commands (and default keybindings):
+If the default size of Light Table is to large or small, it is possible to adjust via the commands \(and default keybindings\):
 
--  `Window: Zoom in` (`Ctrl-+`)
--  `Window: Zoom out` (`Ctrl--`)
--  `Window: Zoom reset` (`Ctrl-0`)
+* `Window: Zoom in` \(`Ctrl-+`\)
+* `Window: Zoom out` \(`Ctrl--`\)
+* `Window: Zoom reset` \(`Ctrl-0`\)
 
+### Cycle through tabs
 
-
+`Ctrl-Tab` and `Ctrl-Shift-Tab` will, respectively, allow you to cycle forwards and backwards through open tabs.
 
 
 
