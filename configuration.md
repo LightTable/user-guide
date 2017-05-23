@@ -7,7 +7,7 @@ There are four main areas allowing for configuration within Light Table:
 * Themes
 * User Plugin
 
-### Change settings (e.g., fonts, line numbers)?
+### Change settings (e.g., fonts, line numbers)
 
 Settings are represented as behaviors in Light Table. All settings in Light Table work this way and behaviors give you the ability to fundamentally change the functionality of Light Table.
 
@@ -17,9 +17,14 @@ For example, to turn on the line number gutter, find the `:editor` tag and in th
 
 ### Configure behaviors
 
-To add a behavior to your `user.behaviors` file, add a vector in the format `[:TAG :COMMAND :ARG1 :ARG2 ...]` (e.g., `[:editor :lt.objs.editor/no-wrap]`). If a command takes arguments append them after the command (e.g., `[:app :lt.objs.app/set-default-zoom-level 0.8]`).
+To add a behavior to your `user.behaviors` file, add a vector in the format `[:TAG :COMMAND :ARG1 :ARG2 ...]`
+>`[:editor :lt.objs.editor/no-wrap]`
 
-Behaviors that are set by default can be disabled/subtracted/removed by prefixing the command with `-`  \(e.g., `[:editor :-lt.objs.editor/no-wrap]`\).
+If a command takes arguments append them after the command
+>`[:app :lt.objs.app/set-default-zoom-level 0.8]`).
+
+Behaviors that are set by default can be disabled/subtracted/removed by prefixing the command with `-`
+>`[:editor :-lt.objs.editor/no-wrap]`\).
 
 ### Change theme
 
@@ -27,8 +32,8 @@ Behaviors that are set by default can be disabled/subtracted/removed by prefixin
 
 To set the editor theme, execute the `Settings: User behaviors` command, type `[:editor :lt.objs.style/set-theme "" ]` and in between quotation marks type a theme name (auto-complete will help you here).
 
-Example:
-> [:editor :lt.objs.style/set-theme  "rubyblue" ]
+
+> `[:editor :lt.objs.style/set-theme  "rubyblue" ]`
 
 To see what different themes look like, try [the CodeMirror theme demo](http://codemirror.net/demo/theme.html).
 
@@ -36,16 +41,16 @@ Note: Some themes listed there may not be available because Light Table may not 
 
 **Third party themes**
 
-You have two options, many third party theme packages can be found in the plugin manager.
+Many third party theme packages can be found in the plugin manager.
 
 Or to try other third party themes, like [these ones](https://github.com/FarhadG/code-mirror-themes),
 1. download a third party theme
-2. check if the local LightTable user themes folder  .config/LightTable/User/core/css/themes/ already exists
+2. check if the local LightTable user themes folder  `.config/LightTable/User/core/css/themes/` already exists
 2. move the theme to the local LightTable user themes folder
 3. add an entry for it in user.behaviors file:  `[:app :lt.objs.style/provide-theme "new-theme-name" "/core/css/themes/new-theme-name.css"]`.
 4. Once a theme is set up you can choose it like the standard themes.
 
-### Change keybindings?
+### Change keybindings
 
 Keybindings are defined in `.keymap` files in Light Table.
 
@@ -67,15 +72,15 @@ Keybindings that are set by default can be subtracted/removed by prefixing the k
 
 Aside from the standard alphanumeric characters you can refer to by name, there are several other special keys: `ctrl`, `alt`,  `shift`, `backspace`, `tab`, `enter`, `return`, `capslock`, `esc`, `escape`, `space`, `pageup`, `pagedown`, `end`, `home`, `left`, `up`,  `right`, `down`, `ins`, `del`, and `plus`. See the library [mousetrap](https://craig.is/killing/mice) for more information.
 
-### Exclude files from the workspace?
+### Exclude files from the workspace
 
 Open your user behaviors and in the `:app` tag start typing "ignore". Select the `Files: Set ignore pattern` behavior.
 
-### Change the location of the lighttable directory?
+### Change the location of the lighttable directory
 
 You can use the environment variable `LTHOME` to tell the command line scripts where to find LT.
 
-### Find out what version of Light Table I'm using?
+### Find out what version of Light Table I'm using
 
 Use the `App: Light Table version` command from the command tab.
 
