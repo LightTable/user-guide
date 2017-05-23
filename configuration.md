@@ -62,13 +62,17 @@ Keys are bound based on context \(tag\), which allows you to create contextual c
 
 ### Configure keybindings
 
-To add a keybinding to your `user.keymap` file, add a vector in the format `[:TAG "KEYBINDING" :COMMAND]` \(e.g., `[:editor "alt-w" :editor.watch.watch-selection]`\).
+To add a keybinding to your `user.keymap` file, add a vector in the format `[:TAG "KEYBINDING" :COMMAND]`
+>`[:editor "alt-w" :editor.watch.watch-selection]`
 
-If a command takes arguments, wrap the command and its arguments in a parentheses \(e.g., `[:editor "alt-(" (:paredit.select.parent "(")]`\).
+If a command takes arguments, wrap the command and its arguments in a parentheses
+> `[:editor "alt-(" (:paredit.select.parent "(")]`
 
-If you want to bind multiple commands to the same keybinding, use a simple vector for the whole binding-command \(e.g., `[:editor  "alt-(" (:paredit.select.parent "(") :smart-indent-selection]`\).
+If you want to bind multiple commands to the same keybinding, use a simple vector for the whole binding-command
+>`[:editor  "alt-(" (:paredit.select.parent "(") :smart-indent-selection]`
 
-Keybindings that are set by default can be subtracted/removed by prefixing the key with `-`  \(e.g., `[:app "-ctrl-shift-d" :docs.search.show]`\).
+Keybindings that are set by default can be subtracted/removed by prefixing the key with `-`
+>`[:app "-ctrl-shift-d" :docs.search.show]`
 
 Aside from the standard alphanumeric characters you can refer to by name, there are several other special keys: `ctrl`, `alt`,  `shift`, `backspace`, `tab`, `enter`, `return`, `capslock`, `esc`, `escape`, `space`, `pageup`, `pagedown`, `end`, `home`, `left`, `up`,  `right`, `down`, `ins`, `del`, and `plus`. See the library [mousetrap](https://craig.is/killing/mice) for more information.
 
